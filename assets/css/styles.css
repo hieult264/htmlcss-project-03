@@ -13,3 +13,137 @@ body {
 }
 
 /* common */
+.container {
+    width: 1170px;
+    max-width: 100% - 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px;
+    height: 60px;
+    min-width: 205px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 60px;
+    border-radius: 30px;
+    border: 1px solid #2e80ce;
+    color: #ffffff;
+    background: #2e80ce;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    color: #ffffff;
+}
+
+/* Header */
+.header {
+    padding-top: 30px;
+    min-height: 100vh;
+    background-color: #10375c;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top .logo {
+    position: relative;
+    display: inline-flex;
+    align-items: top;
+    font-size: 1rem;
+}
+
+.header-top .logo::before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    background: #2e80ce;
+}
+
+.header-top .logo::after {
+    content: "";
+    position: absolute;
+    top: 1.1em;
+    left: 1.1em;
+    display: block;
+    border-radius: 50%;
+    width: 1.6em;
+    height: 1.6em;
+    background: #fff;
+}
+
+.logo__text {
+    margin-left: 0.6em;
+    text-align: right;
+    line-height: 1.5em;
+}
+
+.header .logo__brand {
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+.header .logo__brand--small {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.header .navbar__list {
+    display: flex;
+}
+
+.header .navbar__link {
+    padding: 0 21px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #c9d2da;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+    text-shadow: 0.5px 0 0 currentColor;
+    color: #fff;
+}
+
+.navbar__link--active::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    left: -8px;
+    top: -2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+header .header-action__btn {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #c9d2da;
+}
+
+.header .btn {
+    margin-left: 28px;
+    line-height: 44px;
+    height: 44px;
+    min-width: 104px;
+}
